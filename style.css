@@ -47,3 +47,54 @@ footer {
 h2 {
     color: #0a3d91;
 }
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #eef4ff;
+  color: #000;
+}
+
+h1 {
+  color: #0a3d91;
+}
+
+a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #1565c0;
+}
+
+/* Piano keyboard */
+#pianoKeyboard {
+  display: flex;
+  position: relative;
+  user-select: none;
+}
+
+.key {
+  border: 1px solid #000;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 60px;
+  position: relative;
+}
+
+.key.white {
+  width: 40px;
+  height: 150px;
+  background: white;
+  z-index: 1;
+  margin-right: 1px;
+}
+
+.key.black {
+  width: 25px;
+  height: 100px;
+  background: black;
+  color: white;
+  position: absolute;
+  margin-left: -12px;
+  z-index: 2;
+}
